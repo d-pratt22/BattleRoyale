@@ -3617,8 +3617,8 @@ MonoBehaviour:
   LobbyBrowserScreen: {fileID: 743315432}
   createRoomButton: {fileID: 1113503193}
   findRoomButton: {fileID: 167680672}
-  playerListText: {fileID: 350852003}
-  roomInfoText: {fileID: 1894359877}
+  playerListText: {fileID: 730920011}
+  roomInfoText: {fileID: 374078315}
   startGameButton: {fileID: 2126647203}
   roomListContainer: {fileID: 1121812753}
   roomButtonPrefab: {fileID: 2841017379246294349, guid: ed15a4a5cba7df44fb735f7045398491, type: 3}
