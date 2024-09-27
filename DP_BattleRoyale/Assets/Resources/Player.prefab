@@ -264,6 +264,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 5
   rig: {fileID: 2880005555521532401}
+  id: 0
 --- !u!114 &-7593498658057799226
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -96,6 +96,7 @@ public class Menu : MonoBehaviourPunCallbacks, ILobbyCallbacks
 
     public override void OnJoinedRoom()
     {
+        Debug.Log("We joined the room?");
         SetScreen(LobbyScreen);
         photonView.RPC("UpdateLobbyUI", RpcTarget.All);
     }
@@ -103,13 +104,13 @@ public class Menu : MonoBehaviourPunCallbacks, ILobbyCallbacks
     [PunRPC]
     void UpdateLobbyUI()
     {
-        
+        Debug.Log("We made it to update lobby");
         startGameButton.interactable = PhotonNetwork.IsMasterClient;
         
         playerListText.text = "";
         foreach (Player player in PhotonNetwork.PlayerList)
             playerListText.text += player.NickName + "\n";
-        
+        //playerListText.text = "test";
         roomInfoText.text = "<b>Room Name</b>\n" + PhotonNetwork.CurrentRoom.Name;
     }
 

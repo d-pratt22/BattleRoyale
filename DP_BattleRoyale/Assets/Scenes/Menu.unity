@@ -3243,19 +3243,7 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1437969367}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OnPlayerNameValueChanged
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1171245282}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3592,6 +3580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437969368}
   - component: {fileID: 1437969367}
+  - component: {fileID: 1437969369}
   m_Layer: 0
   m_Name: _Menu
   m_TagString: Untagged
@@ -3617,8 +3606,8 @@ MonoBehaviour:
   LobbyBrowserScreen: {fileID: 743315432}
   createRoomButton: {fileID: 1113503193}
   findRoomButton: {fileID: 167680672}
-  playerListText: {fileID: 730920011}
-  roomInfoText: {fileID: 374078315}
+  playerListText: {fileID: 350852003}
+  roomInfoText: {fileID: 1894359877}
   startGameButton: {fileID: 2126647203}
   roomListContainer: {fileID: 1121812753}
   roomButtonPrefab: {fileID: 2841017379246294349, guid: ed15a4a5cba7df44fb735f7045398491, type: 3}
@@ -3637,6 +3626,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437969369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437969366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1455927759
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +3853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1573288744}
   - component: {fileID: 1573288743}
+  - component: {fileID: 1573288745}
   m_Layer: 0
   m_Name: _NetworkManager
   m_TagString: Untagged
@@ -3877,6 +3889,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1573288745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573288742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1658474832
 GameObject:
   m_ObjectHideFlags: 0
