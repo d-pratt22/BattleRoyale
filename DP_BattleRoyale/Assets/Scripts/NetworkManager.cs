@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -47,4 +48,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel(sceneName);
     }
 
+   /* public override void OnDisconnected(DisconnectCause)
+    {
+        PhotonNetwork.LoadLevel("Menu");
+    }*/
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        GameManager.instance.alivePlayers--;
+        GameUI.instance.UpdatePlayerInfoText();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GameManager.instance.CheckWinCondition();
+        }
+    }
+
+    
 }
