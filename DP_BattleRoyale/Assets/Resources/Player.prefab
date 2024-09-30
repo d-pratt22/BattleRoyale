@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790952602632424372}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.3, y: 1, z: -35.503326}
+  m_LocalRotation: {x: 0.02036621, y: -0, z: -0, w: 0.9997926}
+  m_LocalPosition: {x: -0.08, y: 0.97, z: -1.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8109142880526708030}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.334, y: 0, z: 0}
 --- !u!20 &3144565975895812851
 Camera:
   m_ObjectHideFlags: 0
@@ -283,7 +283,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 6807111284390419951}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

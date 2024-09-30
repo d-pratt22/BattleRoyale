@@ -41,6 +41,14 @@ MonoBehaviour:
   - Initialize
   - UpdateLobbyUI
   - ChangeScene
+  - DamageFlash
+  - Die
+  - TakeDamage
+  - SpawnBullet
+  - WinGame
+  - AddKill
+  - GiveAmmo
+  - Heal
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
