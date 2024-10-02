@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviourPun
 
     void Update()
     {
-        if (!photonView.IsMine || dead)
-            return;
+        /*if (!photonView.IsMine || dead)
+            return;*/
 
         Move();
 
@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviourPun
 
         Vector3 dir = (transform.forward * z + transform.right * x) * moveSpeed;
         dir.y = rig.velocity.y;
+
+        rig.velocity = dir;
     }
 
     void TryJump()
