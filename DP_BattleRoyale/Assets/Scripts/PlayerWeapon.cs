@@ -33,6 +33,11 @@ public class PlayerWeapon : MonoBehaviour
         player.photonView.RPC("SpawnBullet", RpcTarget.All, bulletSpawnPos.transform.position, Camera.main.transform.forward);
         GameUI.instance.UpdateAmmoText();
     }
+
+    public void TryScope()
+    {
+
+    }
     [PunRPC]
     void SpawnBullet(Vector3 pos, Vector3 dir)
     {

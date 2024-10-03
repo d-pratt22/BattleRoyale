@@ -3,7 +3,9 @@ using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using static UnityEngine.GraphicsBuffer;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviourPun
 {
@@ -19,6 +21,10 @@ public class PlayerController : MonoBehaviourPun
 
     public PlayerWeapon weapon;
 
+    public Camera camera1;
+    public Camera camera2;
+    public Image Scope;
+
     [Header("Stats")]
     public float moveSpeed;
     public float jumpForce;
@@ -29,6 +35,12 @@ public class PlayerController : MonoBehaviourPun
     public int id;
     public Player photonPlayer;
 
+    void Start()
+    {
+        camera1.enabled = true;
+        camera2.enabled = false;
+        Scope.enabled = false;
+    }
     void Update()
     {
         /*if (!photonView.IsMine || dead)
@@ -37,7 +49,20 @@ public class PlayerController : MonoBehaviourPun
         Move();
 
         if (Input.GetMouseButtonDown(0))
+        {
             weapon.TryShoot();
+            camera1.enabled = true;
+            camera2.enabled = false;
+            Scope.enabled = false;
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            camera1.enabled = false;
+            camera2.enabled = true;
+            Scope.enabled = true;
+        }
+        
 
 
         if (Input.GetKeyDown(KeyCode.Space))

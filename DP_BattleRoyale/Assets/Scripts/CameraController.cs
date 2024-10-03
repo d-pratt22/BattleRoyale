@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour
     private float rotY;
 
     private bool isSpectator;
+   
 
     void Start ()
     {
@@ -66,5 +67,6 @@ public class CameraController : MonoBehaviour
         isSpectator = true;
         transform.parent = null;
     }
+
 
 }
