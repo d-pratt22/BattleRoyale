@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using static UnityEditor.Experimental.GraphView.GraphView;
+
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
